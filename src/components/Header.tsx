@@ -89,10 +89,6 @@ const Header: React.FC = () => {
                   />
                 </svg>
                 <span>Yêu thích</span>
-                {/* Badge số lượng yêu thích (optional) */}
-                <span className="bg-red-100 text-red-600 text-xs px-2 py-1 rounded-full min-w-[20px] text-center">
-                  3
-                </span>
               </div>
             </Link>
 

@@ -1,69 +1,29 @@
-# React + TypeScript + Vite
+Edu-Ecommerce
+Một nền tảng thương mại điện tử giáo dục được xây dựng bằng React và Vite, cung cấp trải nghiệm mua sắm khóa học trực tuyến hiện đại và thân thiện với người dùng.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+🚀 Tính năng
 
-Currently, two official plugins are available:
+Giao diện hiện đại: Được thiết kế với React và các công nghệ web hiện đại
+Hiệu suất cao: Sử dụng Vite để phát triển nhanh với Hot Module Replacement (HMR)
+TypeScript: Hỗ trợ TypeScript để phát triển an toàn và bảo trì dễ dàng
+ESLint: Tích hợp ESLint để đảm bảo chất lượng code
+Responsive Design: Tương thích với mọi thiết bị
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+🚀 Cài đặt và chạy dự án
+1. Clone repository
+bashgit clone https://github.com/lhknguyen15/edu-ecommerce.git
+cd edu-ecommerce
+2. Cài đặt dependencies
+bashnpm install
+# hoặc
+yarn install
+3. Chạy ứng dụng ở chế độ development
+bashnpm run dev
+# hoặc
+yarn dev
+Ứng dụng sẽ chạy tại http://localhost:5173
+4. Build cho production
+bashnpm run build
+# hoặc
+yarn build
